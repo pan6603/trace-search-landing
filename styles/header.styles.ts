@@ -11,6 +11,12 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 60px;               
+        padding: 0 24px;            
+    }
 `
 
 export const HeaderWrapper = styled.div`
@@ -24,6 +30,13 @@ export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 `
 
 
@@ -36,11 +49,22 @@ export const LogoContainer = styled.div`
     gap: 0px;
 
     cursor: pointer;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 32px; 
+        gap: 8px;    
+    }
 `
 
 export const LogoText = styled.span`
     font-size: 16px;
     color: #404752;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        font-size: 15px; 
+    }
 `
 
 
@@ -52,6 +76,12 @@ export const NavBar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        max-width: 450px; 
+        gap: 16px;      
+    }
 `
 
 export const MenuLink = styled(Link)`
@@ -68,6 +98,12 @@ export const MenuLink = styled(Link)`
     letter-spacing: 0px;
     color: #404752;
 
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        padding-left: 8px;   
+        padding-right: 8px;
+        font-size: 13px;     
+    }
 `
 
 
@@ -79,7 +115,11 @@ export const HeaderActions = styled.div`
     align-items: center;
     gap: 12px;
 
-
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 32px;  
+        gap: 10px;     
+    }
 `
 
 export const VersionBadge = styled.div`

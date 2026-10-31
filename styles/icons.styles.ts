@@ -22,6 +22,19 @@ export const MicrosoftIconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        max-width: 15px;
+        width: 100%;
+        height: 15px;
+
+        svg {
+            width: 15px; 
+            height: 15px;
+        }
+      
+    }
 `
 
 export const GithubIconContainer = styled.div`

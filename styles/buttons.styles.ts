@@ -29,10 +29,23 @@ export const MicrosoftStoreCTAButtonContainer = styled(Link)`
     display: flex;
     align-items: center;
     gap: 8px;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        max-width: 195px; 
+        height: 32px;     
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 `
 
 export const MicrosoftStoreCTAButtonText = styled.span`
     font-family: 'Plus Jakarta Sans', sans-serif; 
     font-weight: 600; 
     font-size: 12px;  
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        font-size: 11px; 
+    }
 `
