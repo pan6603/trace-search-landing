@@ -37,6 +37,11 @@ export const MicrosoftStoreCTAButtonContainer = styled(Link)`
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const MicrosoftStoreCTAButtonText = styled.span`
@@ -47,5 +52,10 @@ export const MicrosoftStoreCTAButtonText = styled.span`
     /* 태블릿 반응형 (1024px 이하) */
     @media (max-width: 1024px) {
         font-size: 11px; 
+    }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        display: none;
     }
 `

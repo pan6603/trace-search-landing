@@ -2,7 +2,20 @@ import styled from "styled-components"
 import Image from "next/image"
 import AppLogoIconSvg from "@/public/images/logos/app-logo.svg"
 
-// 스타일 컴포넌트 추가
+export default function AppLogoIcon() {
+    return (
+        <AppLogoIconContainer>
+            <Image 
+                src={AppLogoIconSvg}
+                alt="app-logo-icon"
+                width={40}
+                height={40}
+                style={{ width: "100%", height: "100%" }} 
+            />
+        </AppLogoIconContainer>
+    )
+}
+
 const AppLogoIconContainer = styled.div`
     width: 40px;
     height: 40px;
@@ -15,22 +28,10 @@ const AppLogoIconContainer = styled.div`
         width: 34px;  
         height: 34px;
     }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        width: 30px;    
+        height: 30px;
+    }
 `;
-
-
-
-export default function AppLogoIcon() {
-    return (
-        <>
-            <AppLogoIconContainer>
-                <Image 
-                    src={AppLogoIconSvg}
-                    alt="app-logo-icon"
-                    width={40}
-                    height={40}
-                />
-            </AppLogoIconContainer>
- 
-        </>
-    )
-}
