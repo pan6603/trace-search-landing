@@ -9,6 +9,7 @@ import {
 } from "@/styles/header.styles"
 import AppLogoIcon from "@/components/ui/icons/AppLogoIcon"
 import MicrosoftStoreCTAButton from "@/components/ui/buttons/MicrosoftStoreCTAButton"
+import BurgerMenuIcon from "@/components/ui/icons/BurgerMenuIcon"
 
 export default function Header() {
     return (
@@ -29,6 +30,7 @@ export default function Header() {
 
                     <HeaderActions>
                         <MicrosoftStoreCTAButton />
+                        <BurgerMenuIcon />
                     </HeaderActions>
                 </HeaderWrapper>
             </HeaderContainer>

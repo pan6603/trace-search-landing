@@ -11,6 +11,17 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 60px;               
+        padding: 0 24px;            
+    }
+
+    @media (max-width: 768px) {
+        height: 56px;               
+        padding: 0 16px;       
+    }
 `
 
 export const HeaderWrapper = styled.div`
@@ -24,6 +35,20 @@ export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        height: 56px;           
+        padding-left: 16px;     
+        padding-right: 16px;
+    }
 `
 
 
@@ -36,11 +61,33 @@ export const LogoContainer = styled.div`
     gap: 0px;
 
     cursor: pointer;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 32px; 
+        gap: 8px;    
+    }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        height: 28px;           
+        gap: 6px;              
+    }
 `
 
 export const LogoText = styled.span`
     font-size: 16px;
     color: #404752;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        font-size: 15px; 
+    }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        font-size: 14px; 
+    }
 `
 
 
@@ -52,6 +99,16 @@ export const NavBar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        max-width: 340px;     
+    }
+
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        display: none;        
+    }
 `
 
 export const MenuLink = styled(Link)`
@@ -63,11 +120,17 @@ export const MenuLink = styled(Link)`
 
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 22px;
     letter-spacing: 0px;
     color: #404752;
 
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        padding-left: 8px;   
+        padding-right: 8px;
+        font-size: 12px;     
+    }
 `
 
 
@@ -79,7 +142,17 @@ export const HeaderActions = styled.div`
     align-items: center;
     gap: 12px;
 
+    /* 태블릿 반응형 (1024px 이하) */
+    @media (max-width: 1024px) {
+        height: 32px;  
+        gap: 10px;     
+    }
 
+    /* 모바일 반응형 (768px 이하) */
+    @media (max-width: 768px) {
+        height: 30px;        
+        gap: 8px;            
+    }
 `
 
 export const VersionBadge = styled.div`
